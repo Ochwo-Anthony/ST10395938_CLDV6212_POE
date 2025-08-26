@@ -3,8 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\lab_services_student\\Desktop\\Github\\ST10395938_CLDV6212_POE\\ABCRetailers\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{850D4F5D-8130-49E4-94FE-AE9703982827}|ABCRetailers.csproj|c:\\users\\lab_services_student\\desktop\\github\\st10395938_cldv6212_poe\\abcretailers\\models\\viewmodels\\ordercreateviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{850D4F5D-8130-49E4-94FE-AE9703982827}|ABCRetailers.csproj|solutionrelative:models\\viewmodels\\ordercreateviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{850D4F5D-8130-49E4-94FE-AE9703982827}|ABCRetailers.csproj|c:\\users\\lab_services_student\\desktop\\github\\st10395938_cldv6212_poe\\abcretailers\\services\\azurestorageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{850D4F5D-8130-49E4-94FE-AE9703982827}|ABCRetailers.csproj|solutionrelative:services\\azurestorageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{850D4F5D-8130-49E4-94FE-AE9703982827}|ABCRetailers.csproj|c:\\users\\lab_services_student\\desktop\\github\\st10395938_cldv6212_poe\\abcretailers\\services\\iazurestorageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{850D4F5D-8130-49E4-94FE-AE9703982827}|ABCRetailers.csproj|solutionrelative:services\\iazurestorageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,19 +18,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "OrderCreateViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\lab_services_student\\Desktop\\Github\\ST10395938_CLDV6212_POE\\ABCRetailers\\Models\\ViewModels\\OrderCreateViewModel.cs",
-              "RelativeDocumentMoniker": "Models\\ViewModels\\OrderCreateViewModel.cs",
-              "ToolTip": "C:\\Users\\lab_services_student\\Desktop\\Github\\ST10395938_CLDV6212_POE\\ABCRetailers\\Models\\ViewModels\\OrderCreateViewModel.cs",
-              "RelativeToolTip": "Models\\ViewModels\\OrderCreateViewModel.cs",
-              "ViewState": "AgIAAAwAAACAzczMzMwFwCAAAAA7AAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "IAzureStorageService.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Desktop\\Github\\ST10395938_CLDV6212_POE\\ABCRetailers\\Services\\IAzureStorageService.cs",
+              "RelativeDocumentMoniker": "Services\\IAzureStorageService.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Desktop\\Github\\ST10395938_CLDV6212_POE\\ABCRetailers\\Services\\IAzureStorageService.cs",
+              "RelativeToolTip": "Services\\IAzureStorageService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-25T21:36:11.168Z",
+              "WhenOpened": "2025-08-25T22:44:26.262Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AzureStorageService.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Desktop\\Github\\ST10395938_CLDV6212_POE\\ABCRetailers\\Services\\AzureStorageService.cs",
+              "RelativeDocumentMoniker": "Services\\AzureStorageService.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Desktop\\Github\\ST10395938_CLDV6212_POE\\ABCRetailers\\Services\\AzureStorageService.cs",
+              "RelativeToolTip": "Services\\AzureStorageService.cs",
+              "ViewState": "AgIAAAYBAAAAeDMzMzP/vxgBAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-25T22:43:46.873Z",
               "EditorCaption": ""
             }
           ]
