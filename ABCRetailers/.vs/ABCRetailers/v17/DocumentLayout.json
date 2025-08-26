@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\lab_services_student\\Desktop\\Github\\ST10395938_CLDV6212_POE\\ABCRetailers\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{850D4F5D-8130-49E4-94FE-AE9703982827}|ABCRetailers.csproj|c:\\users\\lab_services_student\\desktop\\github\\st10395938_cldv6212_poe\\abcretailers\\services\\azurestorageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{850D4F5D-8130-49E4-94FE-AE9703982827}|ABCRetailers.csproj|solutionrelative:services\\azurestorageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{850D4F5D-8130-49E4-94FE-AE9703982827}|ABCRetailers.csproj|c:\\users\\lab_services_student\\desktop\\github\\st10395938_cldv6212_poe\\abcretailers\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{850D4F5D-8130-49E4-94FE-AE9703982827}|ABCRetailers.csproj|solutionrelative:controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{850D4F5D-8130-49E4-94FE-AE9703982827}|ABCRetailers.csproj|c:\\users\\lab_services_student\\desktop\\github\\st10395938_cldv6212_poe\\abcretailers\\services\\iazurestorageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{850D4F5D-8130-49E4-94FE-AE9703982827}|ABCRetailers.csproj|solutionrelative:services\\iazurestorageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{850D4F5D-8130-49E4-94FE-AE9703982827}|ABCRetailers.csproj|c:\\users\\lab_services_student\\desktop\\github\\st10395938_cldv6212_poe\\abcretailers\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{850D4F5D-8130-49E4-94FE-AE9703982827}|ABCRetailers.csproj|solutionrelative:models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{850D4F5D-8130-49E4-94FE-AE9703982827}|ABCRetailers.csproj|c:\\users\\lab_services_student\\desktop\\github\\st10395938_cldv6212_poe\\abcretailers\\controllers\\uploadcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{850D4F5D-8130-49E4-94FE-AE9703982827}|ABCRetailers.csproj|solutionrelative:controllers\\uploadcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,32 +22,43 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "IAzureStorageService.cs",
-              "DocumentMoniker": "C:\\Users\\lab_services_student\\Desktop\\Github\\ST10395938_CLDV6212_POE\\ABCRetailers\\Services\\IAzureStorageService.cs",
-              "RelativeDocumentMoniker": "Services\\IAzureStorageService.cs",
-              "ToolTip": "C:\\Users\\lab_services_student\\Desktop\\Github\\ST10395938_CLDV6212_POE\\ABCRetailers\\Services\\IAzureStorageService.cs",
-              "RelativeToolTip": "Services\\IAzureStorageService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAaAAAAAAAAAA==",
+              "Title": "Order.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Desktop\\Github\\ST10395938_CLDV6212_POE\\ABCRetailers\\Models\\Order.cs",
+              "RelativeDocumentMoniker": "Models\\Order.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Desktop\\Github\\ST10395938_CLDV6212_POE\\ABCRetailers\\Models\\Order.cs",
+              "RelativeToolTip": "Models\\Order.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-25T22:44:26.262Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-26T14:22:21.938Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UploadController.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Desktop\\Github\\ST10395938_CLDV6212_POE\\ABCRetailers\\Controllers\\UploadController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UploadController.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Desktop\\Github\\ST10395938_CLDV6212_POE\\ABCRetailers\\Controllers\\UploadController.cs",
+              "RelativeToolTip": "Controllers\\UploadController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-26T11:16:17.639Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "AzureStorageService.cs",
-              "DocumentMoniker": "C:\\Users\\lab_services_student\\Desktop\\Github\\ST10395938_CLDV6212_POE\\ABCRetailers\\Services\\AzureStorageService.cs",
-              "RelativeDocumentMoniker": "Services\\AzureStorageService.cs",
-              "ToolTip": "C:\\Users\\lab_services_student\\Desktop\\Github\\ST10395938_CLDV6212_POE\\ABCRetailers\\Services\\AzureStorageService.cs",
-              "RelativeToolTip": "Services\\AzureStorageService.cs",
-              "ViewState": "AgIAAAYBAAAAeDMzMzP/vxgBAAAOAAAAAAAAAA==",
+              "Title": "OrderController.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Desktop\\Github\\ST10395938_CLDV6212_POE\\ABCRetailers\\Controllers\\OrderController.cs",
+              "RelativeDocumentMoniker": "Controllers\\OrderController.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Desktop\\Github\\ST10395938_CLDV6212_POE\\ABCRetailers\\Controllers\\OrderController.cs",
+              "RelativeToolTip": "Controllers\\OrderController.cs",
+              "ViewState": "AgIAAP8AAAAAxMzMzIwhwAsBAABSAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-25T22:43:46.873Z",
+              "WhenOpened": "2025-08-26T11:15:53.551Z",
               "EditorCaption": ""
             }
           ]
