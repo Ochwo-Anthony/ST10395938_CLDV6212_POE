@@ -1,8 +1,70 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+﻿@model ABCRetailers.Models.ViewModels.HomeViewModel
+@{
+    ViewData["Title"] = "Home";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="container py-5">
+    <div class="text-center mb-5">
+        <h1 class="display-4 text-primary fw-bold">
+            <i class="fas fa-store"></i> Welcome to ABC Retailers
+        </h1>
+        <p class="lead">Manage customers, products, and orders seamlessly</p>
+    </div>
+
+    <!-- Action Cards -->
+    <div class="row g-4 mb-5">
+        <div class="col-md-3">
+            <div class="card h-100 shadow-sm text-center p-3">
+                <i class="fas fa-users fa-2x text-primary mb-3"></i>
+                <h5>@Model.CustomerCount Customers</h5>
+                <a asp-controller="Customer" asp-action="Index" class="btn btn-primary mt-auto">View Customers</a>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card h-100 shadow-sm text-center p-3">
+                <i class="fas fa-box fa-2x text-success mb-3"></i>
+                <h5>@Model.ProductCount Products</h5>
+                <a asp-controller="Product" asp-action="Index" class="btn btn-success mt-auto">View Products</a>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card h-100 shadow-sm text-center p-3">
+                <i class="fas fa-shopping-cart fa-2x text-warning mb-3"></i>
+                <h5>@Model.OrderCount Orders</h5>
+                <a asp-controller="Order" asp-action="Index" class="btn btn-warning mt-auto">View Orders</a>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card h-100 shadow-sm text-center p-3">
+                <i class="fas fa-upload fa-2x text-info mb-3"></i>
+                <h5>File Upload</h5>
+                <a asp-controller="Upload" asp-action="Index" class="btn btn-info mt-auto">Upload</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Featured Products Grid -->
+    <h3 class="mb-4"><i class="fas fa-star text-warning"></i> Featured Products</h3>
+    <div class="row">
+        @if (Model.FeaturedProducts.Any())
+        {
+            foreach (var product in Model.FeaturedProducts)
+            {
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="@product.ImageURL" class="card-img-top" alt="@product.ProductName" style="height: 180px; object-fit: cover;">
+                        <div class="card-body text-center">
+                            <h6>@product.ProductName</h6>
+                            <p class="text-success fw-bold">@product.Price.ToString("C")</p>
+                            <small class="text-muted">Stock: @product.StockAvailable</small>
+                        </div>
+                    </div>
+                </div>
+            }
+        }
+        else
+        {
+            <div class="alert alert-info">No featured products found.</div>
+        }
+    </div>
 </div>
