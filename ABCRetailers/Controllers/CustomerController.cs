@@ -69,7 +69,22 @@ namespace ABCRetailers.Controllers
             {
                 try
                 {
-                    await _storageService.UpdateEntityAsync(customer);
+                    //update entity
+                    var originalCustomer = await _storageService.GetEntityAsync<Customer>("Customer", customer.RowKey);
+                    if (originalCustomer == null)
+                    {
+                        return NotFound();
+                    }
+
+                    //updating Fields
+                    originalCustomer.Name = customer.Name;
+                    originalCustomer.Surname = customer.Surname;
+                    originalCustomer.Email = customer.Email;
+                    originalCustomer.Username = customer.Username;
+                    originalCustomer.ShippingAddress = customer.ShippingAddress;
+
+                    //update Azure Table
+                    await _storageService.UpdateEntityAsync(originalCustomer);
                     TempData["Success"] = "Customer updated successfully!";
                     return RedirectToAction(nameof(Index));
                 }

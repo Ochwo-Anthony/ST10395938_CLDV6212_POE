@@ -40,11 +40,11 @@ namespace ABCRetailers.Models
 
         [Display(Name = "Unit Price")]
         [DataType(DataType.Currency)]
-        public decimal UnitPrice { get; set; }
+        public double UnitPrice { get; set; }
 
         [Display(Name = "Total Price")]
         [DataType(DataType.Currency)]
-        public decimal TotalPrice { get; set; }
+        public double TotalPrice { get; set; }
 
         [Required]
         [Display(Name = "Status")]

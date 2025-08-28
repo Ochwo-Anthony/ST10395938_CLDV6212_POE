@@ -35,7 +35,7 @@ namespace ABCRetailers.Controllers
             {
                 _logger.LogInformation("Raw price from form: '{PriceForValue}'", priceFormValue.ToString());
 
-                if (decimal.TryParse(priceFormValue, out var parsedPrice))
+                if (double.TryParse(priceFormValue, out var parsedPrice))
                 {
                     product.Price = parsedPrice;
                     _logger.LogInformation("Successfully parsed price: {Price}", parsedPrice);
@@ -103,7 +103,7 @@ namespace ABCRetailers.Controllers
             // Manual price parsing for edit too
             if (Request.Form.TryGetValue("Price", out var priceFormValue))
             {
-                if (decimal.TryParse(priceFormValue, out var parsedPrice))
+                if (double.TryParse(priceFormValue, out var parsedPrice))
                 {
                     product.Price = parsedPrice;
                     _logger.LogInformation("Edit: Successfully parsed price: {Price}", parsedPrice);

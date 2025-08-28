@@ -28,11 +28,11 @@ namespace ABCRetailers.Models
         public string PriceString {  get; set; } = string.Empty;
 
         [Display(Name = "Price")]
-        public decimal Price 
+        public double Price 
         { 
             get
             {
-                return decimal.TryParse(PriceString, out var result) ? result : 0m;
+                return double.TryParse(PriceString, out var result) ? result : 0;
             }
             set 
             {
