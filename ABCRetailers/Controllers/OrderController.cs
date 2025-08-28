@@ -163,15 +163,25 @@ namespace ABCRetailers.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(Order order)
         {
-            if  (!ModelState.IsValid)
+            if (ModelState.IsValid)
             {
                 try
                 {
-                    await _storageService.UpdateEntityAsync(order);
-                    TempData["Success"] = "Order Updated Successfully!";
+                    // Fetch original entity to preserve ETag
+                    var originalOrder = await _storageService.GetEntityAsync<Order>("Order", order.RowKey);
+                    if (originalOrder == null)
+                    {
+                        return NotFound();
+                    }
+
+                    // Update only editable fields
+                    originalOrder.Status = order.Status;
+                    originalOrder.OrderDate = order.OrderDate; // if editable
+
+                    await _storageService.UpdateEntityAsync(originalOrder);
+                    TempData["Success"] = "Order updated successfully!";
                     return RedirectToAction(nameof(Index));
                 }
-
                 catch (Exception ex)
                 {
                     ModelState.AddModelError("", $"Error updating order: {ex.Message}");
@@ -180,6 +190,7 @@ namespace ABCRetailers.Controllers
 
             return View(order);
         }
+
 
         [HttpPost]
         public async Task<IActionResult> Delete(string id)

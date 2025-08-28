@@ -3,23 +3,25 @@
     ViewData["Title"] = "Upload Document";
 }
 
-<h2><i class="fas fa-upload"></i> Upload Document</h2>
+<h2 class="text-primary mb-4">
+    <i class="fas fa-upload"></i> Upload Document
+</h2>
 
-<div class="row">
+<div class="row justify-content-center">
     <div class="col-md-8">
-        <div class="card">
-            <div class="card-header">
-                <h5 class="card-title mb-0">
+        <div class="card shadow-sm border-0 rounded-3">
+            <div class="card-header bg-light border-bottom border-primary">
+                <h5 class="card-title mb-0 text-primary">
                     <i class="fas fa-file-upload"></i> Submit Proof of Payment
                 </h5>
             </div>
             <div class="card-body">
                 <form asp-action="Index" method="post" enctype="multipart/form-data">
-                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
 
                     <div class="form-group mb-3">
-                        <label asp-for="ProofOfPayment" class="form-label">Choose File</label>
-                        <input asp-for="ProofOfPayment" type="file" class="form-control" accept=".pdf,.jpg,.jpeg,.png,.doc,.docx" />
+                        <label asp-for="ProofOfPayment" class="form-label fw-bold">Choose File</label>
+                        <input asp-for="ProofOfPayment" type="file" class="form-control border-primary shadow-sm" accept=".pdf,.jpg,.jpeg,.png,.doc,.docx" />
                         <span asp-validation-for="ProofOfPayment" class="text-danger"></span>
                         <div class="form-text">Accepted formats: PDF, JPG, PNG, DOC, DOCX (Max size: 10MB)</div>
                     </div>
@@ -27,23 +29,23 @@
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-group mb-3">
-                                <label asp-for="OrderId" class="form-label">Order ID (Optional)</label>
-                                <input asp-for="OrderId" class="form-control" placeholder="Enter related order ID" />
+                                <label asp-for="OrderId" class="form-label fw-bold">Order ID (Optional)</label>
+                                <input asp-for="OrderId" class="form-control border-primary shadow-sm" placeholder="Enter related order ID" />
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group mb-3">
-                                <label asp-for="CustomerName" class="form-label">Customer Name (Optional)</label>
-                                <input asp-for="CustomerName" class="form-control" placeholder="Enter customer name" />
+                                <label asp-for="CustomerName" class="form-label fw-bold">Customer Name (Optional)</label>
+                                <input asp-for="CustomerName" class="form-control border-primary shadow-sm" placeholder="Enter customer name" />
                             </div>
                         </div>
                     </div>
 
-                    <div class="form-group">
-                        <button type="submit" class="btn btn-primary btn-lg">
+                    <div class="form-group mt-3">
+                        <button type="submit" class="btn btn-primary btn-lg shadow-sm rounded-pill px-4">
                             <i class="fas fa-upload"></i> Upload File
                         </button>
-                        <a asp-controller="Home" asp-action="Index" class="btn btn-secondary">
+                        <a asp-controller="Home" asp-action="Index" class="btn btn-outline-primary ms-2 rounded-pill px-4">
                             <i class="fas fa-home"></i> Back to Home
                         </a>
                     </div>
@@ -52,9 +54,11 @@
         </div>
 
         <div class="mt-4">
-            <div class="alert alert-info">
-                <h6><i class="fas fa-info-circle"></i> Upload Instructions:</h6>
-                <ul class="mb-0">
+            <div class="alert alert-info border-info shadow-sm rounded-3">
+                <h6 class="fw-bold text-primary mb-2">
+                    <i class="fas fa-info-circle"></i> Upload Instructions
+                </h6>
+                <ul class="mb-0 ps-3">
                     <li>Select your proof of payment document</li>
                     <li>Optionally provide Order ID and Customer Name for reference</li>
                     <li>File will be stored securely in Azure Storage</li>
